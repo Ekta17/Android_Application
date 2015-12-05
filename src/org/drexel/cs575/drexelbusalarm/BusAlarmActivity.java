@@ -296,7 +296,6 @@ public class BusAlarmActivity extends Activity {
 		dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
 		spinnerStreet.setAdapter(dataAdapter);
-		//testing
 	}
 
 	/**
