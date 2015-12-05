@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Drexel Bus Alarm</string>
+    <string name="selectRoute">Select Route</string>
+    <string name="selectStreet">Select Street</string>
+    <string name="selectBusTime">Select Bus Time</string>
+    <string name="pickDate">Pick Date</string>
+    <string name="selectedDate">Selected Date</string>
+    <string name="setMinutes">Set Minutes for Alarm</string>
+    <string name="setAlarm">Set Alarm</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbarStyle="outsideInset"
+    android:scrollbars="vertical"
+    tools:context="org.drexel.cs575.drexelbusalarm.BusAlarmActivity" >
+
+    <!-- Label for Route Selection -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:editable="false"
+        android:text="@string/selectRoute" />
+
+    <!-- Spinner Dropdown for Route Selection -->
+
+    <Spinner
+        android:id="@+id/spinner_route"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="2dip" />
+
+    <!-- Label for Street Selection -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="5dip"
+        android:editable="false"
+        android:text="@string/selectStreet" />
+
+    <!-- Spinner Dropdown for Street Selection -->
+
+    <Spinner
+        android:id="@+id/spinner_street"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="2dip" />
+
+    <!-- Button for Date Selection -->
+
+    <Button
+        android:id="@+id/btnDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dip"
+        android:layout_marginRight="100dip"
+        android:layout_marginTop="5dip"
+        android:text="@string/pickDate" />
+
+    <!-- Label for Selected Date -->
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dip"
+        android:layout_marginRight="50dip"
+        android:layout_marginTop="2dip"
+        android:text="@string/selectedDate"
+        android:textSize="12dip" />
+
+    <!-- Label for Bus Time selection -->
+
+    <TextView
+        android:id="@+id/txtBusTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="5dip"
+        android:editable="false"
+        android:text="@string/selectBusTime" />
+
+    <!-- Spinner Dropdown for Bus Time selection -->
+
+    <Spinner
+        android:id="@+id/spinner_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="2dip" />
+
+    <!-- Reminder time relative to Bus Timing -->
+    <!-- Alarm to be set how many minutes before the Bus time -->
+
+    <TextView
+        android:id="@+id/txtAlarmTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="5dip"
+        android:editable="false"
+        android:text="@string/setMinutes" />
+
+    <!-- Number Picker to select Minutes before the Bus time for Alarm -->
+
+    <NumberPicker
+        android:id="@+id/setMinutes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dip"
+        android:layout_marginRight="130dip"
+        android:layout_marginTop="2dip"
+        android:descendantFocusability="blocksDescendants"
+        android:scrollbarStyle="insideInset" />
+
+    <!-- Button to set the alarm -->
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dip"
+        android:layout_marginRight="75dip"
+        android:layout_marginTop="5dip"
+        android:text="@string/setAlarm" />
+
+</LinearLayout>
